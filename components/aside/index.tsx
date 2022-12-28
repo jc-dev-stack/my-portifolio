@@ -26,14 +26,14 @@ class Aside extends React.Component<PropsAside> {
                     <Informations email={userGithub.email} />
                 </ContainerAside>
                 <ContainerAside>
-                    <PorcentBar title="HTML" porcent={90} />
-                    <PorcentBar title="CSS" porcent={80} />
-                    <PorcentBar title="PHP" porcent={99} />
-                    <PorcentBar title="Javascript" porcent={80} />
-                    <PorcentBar title="Typescript" porcent={80} />
-                    <PorcentBar title="SQL" porcent={75} />
-                    <PorcentBar title="Docker" porcent={60} />
-                    <PorcentBar title="Python" porcent={50} />
+                    <PorcentBar title="HTML" nivel="Intermediario - Avançado" />
+                    <PorcentBar title="CSS" nivel="Intermediario - Avançado" />
+                    <PorcentBar title="PHP" nivel="Avançado" />
+                    <PorcentBar title="Javascript" nivel="Intermediario - Avançado" />
+                    <PorcentBar title="Typescript" nivel="Intermediario - Avançado" />
+                    <PorcentBar title="SQL" nivel="Básico" />
+                    <PorcentBar title="Docker" nivel="Básico" />
+                    <PorcentBar title="Python" nivel="Básico" />
                 </ContainerAside>
             </aside>
         )
