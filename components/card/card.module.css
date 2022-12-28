@@ -1,0 +1,27 @@
+.card {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    background-color: #2A6B7C;
+    border-radius: 5px;
+    text-align: center;
+    height: 250px;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    background-color: #143E3B;
+}
+
+.carddescription {
+    text-align: left;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        height: fit-content;
+    }
+}

@@ -1,0 +1,11 @@
+.myportifolio {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .myportifolio {
+        grid-template-columns: 1fr;
+    }
+}

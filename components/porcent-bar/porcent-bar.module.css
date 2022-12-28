@@ -1,0 +1,28 @@
+.porcentbar {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.porcentbarbar {
+    background-color: #030509;
+    width: 100%;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.porcentbartitle {
+    margin: 0;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.porcentbarfill {
+    height: 100%;
+    background-color: #64B83C;
+    border-radius: 5px;
+}
+
+.porcentbarnumber {
+    color: silver;
+}

@@ -1,0 +1,24 @@
+.main {
+    color: white;
+    padding: 30px 50px 30px;
+}
+
+.vermais {
+    border-radius: 20px;
+    background-color: #64B83C;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    transition: all 100ms linear;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.vermais a {
+    padding: 10px;
+}
+
+.vermais:hover {
+    transform: scale(1.2);
+    background-color: #50982f;
+}

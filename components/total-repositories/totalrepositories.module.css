@@ -1,0 +1,18 @@
+.totalrepositories {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+    color: white;
+}
+
+.totalrepositoriesnumber {
+    font-weight: bolder;
+    color: #64B83C;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.totalrepositoriestitle {
+    font-weight: bolder;
+}

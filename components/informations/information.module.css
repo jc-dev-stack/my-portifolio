@@ -1,0 +1,14 @@
+.informations {
+    color: white;
+}
+
+.informationslist {
+    list-style: none;
+    padding: 0;
+}
+
+.informationslist li {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0 10px;
+}
