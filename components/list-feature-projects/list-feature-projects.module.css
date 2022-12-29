@@ -1,8 +1,3 @@
-.container {
-    display: grid;
-    grid-template-columns: 100%;
-}
-
 .featureproject {
     background-color: #143E3B;
     border-radius: 5px;

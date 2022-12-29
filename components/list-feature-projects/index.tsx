@@ -57,7 +57,7 @@ class ListFeatureProjects extends React.Component<PropsListFeatureProject> {
     render(): React.ReactNode {
         const { listFeatureProject } = this.props;
         return (
-            <div className={styles.container}>
+            <div>
                 {listFeatureProject.map((project, index) => <FeatureProject title={project.title} description={project.description} imagesrc={project.imagesrc} languages={project.languages} link={project.link} key={index} />)}
             </div>
         )
