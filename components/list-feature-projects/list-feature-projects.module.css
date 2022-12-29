@@ -1,10 +1,16 @@
+.container {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
 .featureproject {
     background-color: #143E3B;
     border-radius: 5px;
     margin-bottom: 10px;
     display: grid;
-    grid-template-columns: 550px auto;
+    grid-template-columns: 35% auto;
     transition: all 100ms linear;
+    width: 100%;
 }
 
 .containerimage {
@@ -53,20 +59,22 @@
 
 .listlanguages ul {
     list-style: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 5px;
+    width: 50%;
 }
 
 .listlanguages li {
     padding: 10px 20px 10px 20px;
     border: 1px solid snow;
-    margin-right: 5px;
     border-radius: 5px;
     font-weight: bolder;
 }
 
 @media only screen and (max-width:1600px) {
     .featureproject {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
 
     .containerimage {
@@ -79,5 +87,9 @@
 
     .containerlink {
         margin-top: 50px;
+    }
+
+    .listlanguages ul {
+        grid-template-columns: repeat(2, auto);
     }
 }

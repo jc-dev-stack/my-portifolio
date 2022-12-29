@@ -22,7 +22,7 @@ class FeatureProject extends React.Component<TypeFeatureProject> {
                     <Image
                         src={imagesrc}
                         alt={"image"}
-                        width={500}
+                        width={300}
                         height={300}
                         priority
                     />
@@ -57,9 +57,9 @@ class ListFeatureProjects extends React.Component<PropsListFeatureProject> {
     render(): React.ReactNode {
         const { listFeatureProject } = this.props;
         return (
-            <>
+            <div className={styles.container}>
                 {listFeatureProject.map((project, index) => <FeatureProject title={project.title} description={project.description} imagesrc={project.imagesrc} languages={project.languages} link={project.link} key={index} />)}
-            </>
+            </div>
         )
     }
 }
