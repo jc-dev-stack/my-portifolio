@@ -7,8 +7,6 @@ import { userGithub } from '../@types/usergithub'
 import { data } from '../data/featureprojects'
 import { FeatureProject } from '../@types/featureproject'
 
-const inter = Inter({ subsets: ['latin'] })
-
 type PropsHome = {
   projects: ProjectGithub[]
   user: userGithub,
