@@ -25,7 +25,7 @@ class Main extends React.Component<PropsMain> {
         const { projects, totalProject, featureProjects } = this.props;
         return (
             <main className={styles.main}>
-                <Section title="Minhas habilidates" id="section-1">
+                <Section title="Minhas habilidades" id="section-1">
                     <ContainerMain>
                         <PorcentBar title="HTML" nivel="Intermediario - Avançado" />
                         <PorcentBar title="CSS" nivel="Intermediario - Avançado" />
