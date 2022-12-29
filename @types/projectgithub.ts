@@ -3,4 +3,5 @@ export type ProjectGithub = {
     private: boolean,
     description: string | null,
     html_url: string
+    language: string
 }

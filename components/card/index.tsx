@@ -5,6 +5,7 @@ type PropsCard = {
     title: string
     description: string | null
     url?: string
+    language: string
 }
 
 class Card extends React.Component<PropsCard>{
@@ -13,7 +14,7 @@ class Card extends React.Component<PropsCard>{
     }
 
     render(): React.ReactNode {
-        const { title, description, url } = this.props;
+        const { title, description, url, language } = this.props;
         return (
             <a href={url} target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
                 <div className={styles.card}>
@@ -21,6 +22,9 @@ class Card extends React.Component<PropsCard>{
                     <p className={styles.carddescription}>
                         {description}
                     </p>
+                    <div className={styles.language}>
+                        <p>{language}</p>
+                    </div>
                 </div>
             </a>
         )

@@ -18,7 +18,7 @@ class MyPortifolio extends React.Component<PropsMyPortifolio> {
         return (
             <div className={styles.myportifolio}>
                 <Aside userGithub={propsaside.userGithub} />
-                <Main projects={propsmain.projects} totalProject={propsmain.totalProject} />
+                <Main projects={propsmain.projects} totalProject={propsmain.totalProject} featureProjects={propsmain.featureProjects} />
             </div>
         )
     }

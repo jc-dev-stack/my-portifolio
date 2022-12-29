@@ -18,6 +18,19 @@
 .carddescription {
     text-align: left;
     margin-top: 10px;
+    height: 130px;
+    overflow-y: auto;
+}
+
+.language {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.language p {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid silver;
 }
 
 @media only screen and (max-width: 600px) {

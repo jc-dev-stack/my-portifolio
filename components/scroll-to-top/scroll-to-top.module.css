@@ -1,0 +1,17 @@
+.scrollcontainer {
+    padding: 10px;
+    background-color: #64B83C;
+    width: fit-content;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 100ms;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.scrollcontainer:hover {
+    transform: scale(1.2);
+    background-color: #519531;
+}

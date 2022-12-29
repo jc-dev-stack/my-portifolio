@@ -15,7 +15,7 @@ class ListProjects extends React.Component<PropsListProjects>{
         const { projects } = this.props;
         return (
             <>
-                {projects.map((project, index) => <Card title={project.name} description={project.description} url={project.html_url} key={index} />)}
+                {projects.map((project, index) => <Card title={project.name} description={project.description} url={project.html_url} language={project.language} key={index} />)}
             </>
         )
     }

@@ -1,8 +1,10 @@
 import React from "react";
+import styles from "./section.module.css";
 
 type PropsSection = {
     title: string
     children?: any
+    id: string
 }
 
 class Section extends React.Component<PropsSection>{
@@ -11,10 +13,10 @@ class Section extends React.Component<PropsSection>{
     }
 
     render(): React.ReactNode {
-        const { title, children } = this.props;
+        const { title, children, id } = this.props;
         return (
-            <section>
-                <h1>{title}</h1>
+            <section className={styles.section} id={id}>
+                <h1 style={{ marginBottom: 30 }}>{title}</h1>
                 {children}
             </section>
         )

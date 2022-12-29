@@ -4,7 +4,7 @@
 }
 
 .porcentbarbar {
-    background-color: #030509;
+    background-color: #060C0F;
     width: 100%;
     border-radius: 5px;
     height: 10px;
@@ -21,6 +21,7 @@
     height: 100%;
     background-color: #64B83C;
     border-radius: 5px;
+    transition: all 100ms linear;
 }
 
 .porcentbarnumber {

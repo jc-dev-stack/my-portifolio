@@ -1,0 +1,28 @@
+.menuaside {
+    color: white;
+}
+
+.menuaside ul {
+    list-style: none;
+}
+
+.menuaside li {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 50ms linear;
+    text-decoration: underline;
+}
+
+.menuaside li:hover {
+    background-color: #143E3B;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    .menuaside li {
+        text-align: center;
+    }
+}

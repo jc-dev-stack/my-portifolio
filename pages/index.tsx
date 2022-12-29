@@ -4,15 +4,18 @@ import MyPortifolio from '../components/my-portifolio'
 import { GetStaticPropsResult } from 'next'
 import { ProjectGithub } from '../@types/projectgithub'
 import { userGithub } from '../@types/usergithub'
+import { data } from '../data/featureprojects'
+import { FeatureProject } from '../@types/featureproject'
 
 const inter = Inter({ subsets: ['latin'] })
 
 type PropsHome = {
   projects: ProjectGithub[]
-  user: userGithub
+  user: userGithub,
+  featureProjects: FeatureProject[]
 }
 
-export default function Home({ projects, user }: PropsHome) {
+export default function Home({ projects, user, featureProjects }: PropsHome) {
   return (
     <>
       <Head>
@@ -24,7 +27,8 @@ export default function Home({ projects, user }: PropsHome) {
       <MyPortifolio
         propsmain={{
           projects,
-          totalProject: user.public_repos
+          totalProject: user.public_repos,
+          featureProjects
         }}
         propsaside={{
           userGithub: user
@@ -36,12 +40,14 @@ export default function Home({ projects, user }: PropsHome) {
 export async function getStaticProps(): Promise<GetStaticPropsResult<PropsHome>> {
   const res = await fetch("https://api.github.com/users/jc-dev-stack/repos?per_page=6&page=3");
   const htt = await fetch("https://api.github.com/users/jc-dev-stack");
+  const featureProjects = data;
   const projects = await res.json();
   const user = await htt.json();
   return {
     props: {
       projects,
-      user
+      user,
+      featureProjects
     }, // will be passed to the page component as props
   }
 }
