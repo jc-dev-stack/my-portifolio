@@ -26,7 +26,7 @@ export class CardFeatureProject extends React.Component<FeatureProject> {
                         {languages.map((lan, index) => <p key={index} className={'ml-2'}>{lan}</p>)}
                     </div>
                     <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <a className="btn btn-primary btn-lg px-4 me-md-2" href={link} target={"_blank"}>Ver</a>
+                        <a className="btn btn-primary btn-lg px-4 me-md-2" rel="noreferrer" href={link} target={"_blank"}>Ver</a>
                     </div>
                 </div>
             </div>
