@@ -35,13 +35,13 @@ export class Header extends React.Component {
                 backgroundColor: '#090b1e'
             }}>
                 <Container>
-                    <Navbar.Brand className="text-white">Meu portifolio</Navbar.Brand>
+                    <Navbar.Brand className="text-white">Meu Portfólio</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-white" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link className="text-white p-2" href="#inicio" style={{ cursor: "pointer" }}>Inicio</Nav.Link>
                             <Nav.Link className="text-white p-2" href="#habilidades" style={{ cursor: "pointer" }}>Minhas habilidades</Nav.Link>
-                            <Nav.Link className="text-white p-2" href="#projetos-destaque" style={{ cursor: "pointer" }}>Projetos em destaques</Nav.Link>
+                            <Nav.Link className="text-white p-2" href="#projetos-destaque" style={{ cursor: "pointer" }}>Projetos em destaque</Nav.Link>
                             <Nav.Link className="text-white p-2" href="#projetos-git" style={{ cursor: "pointer" }}>Projetos no github</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
