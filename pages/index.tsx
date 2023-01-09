@@ -1,3 +1,4 @@
+import { ThemeProvider } from "styled-components";
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import MyPortifolio from '../components/my-portifolio'
@@ -6,6 +7,8 @@ import { ProjectGithub } from '../@types/projectgithub'
 import { userGithub } from '../@types/usergithub'
 import { data } from '../data/featureprojects'
 import { FeatureProject } from '../@types/featureproject'
+import { Portifolio } from '../template/portifolio/portifolio'
+import { theme } from "../styles/theme";
 
 type PropsHome = {
   projects: ProjectGithub[]
@@ -22,15 +25,9 @@ export default function Home({ projects, user, featureProjects }: PropsHome) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <MyPortifolio
-        propsmain={{
-          projects,
-          totalProject: user.public_repos,
-          featureProjects
-        }}
-        propsaside={{
-          userGithub: user
-        }} />
+      <ThemeProvider theme={theme}>
+        <Portifolio featureProjects={featureProjects} projects={projects} user={user} />
+      </ThemeProvider >
     </>
   )
 }
@@ -49,3 +46,17 @@ export async function getStaticProps(): Promise<GetStaticPropsResult<PropsHome>>
     }, // will be passed to the page component as props
   }
 }
+
+/**
+ * 
+ * <MyPortifolio
+        propsmain={{
+          projects,
+          totalProject: user.public_repos,
+          featureProjects
+        }}
+        propsaside={{
+          userGithub: user
+        }}
+      />
+ */
